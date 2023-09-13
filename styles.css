@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+:root {
+    --mobile: 375px;
+    --desktop: 1440px;
+    --primary: hsl(322, 100%, 66%);
+    --neutral-pale-cyan: hsl(193, 100%, 96%);
+    --neutral-dark-cyan: hsl(193, 100%, 96%);
+    --neutral-grayish-blue: hsl(193, 100%, 96%);
+    --fs: 18px;
+    --fm: 'Poppins', sans-serif;
+    --fw: 600;
+    --fw-pry-call-2-act: 400;
+    --fw-sec-call-2-act: 700;
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, a, button,span{
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+}
+
+body {
+    font-size: var(--fs);
+    background-color: var(-neutral-grayish-blue);
+    font-family: var(--fm);
+}
+
+.container {
+    width: 100%;
+    background-repeat: no-repeat;
+}
+header {
+    background-image: url(/images/bg-hero-mobile.svg);
+    min-height: 100vh;
+    padding-top: 20px ;
+    padding-bottom: 30px ;
+    background-color: var(--neutral-pale-cyan);
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+nav button {
+        font-size: 14px;
+        font-weight: var(--fw-pry-call-2-act);
+        padding: 5px 20px;
+
+        border-radius: 50px;
+        outline: none;
+        border: 0;
+        background-color: white;
+        color: black;
+}
+
+header img {
+    width: 150px;
+}
+.content {
+    margin-top: 100px;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3% ;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.hero {
+    width: 80%;
+    margin: 80px auto 0 auto;
+}
+
+.hero h1 {
+    font-size: 30px;
+    padding: 20px 0;
+    font-weight: var(--fw);
+}
+
+.hero p {
+    font-size: var(--fs);
+    padding: 20px 0;
+
+}
+.hero button{
+    font-size: var(--fs);
+    font-weight: var(--fw-sec-call-2-act);
+    padding: 10px 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: 0;
+    background-color: var(--primary);
+    color: white;
+
+}
+
+img.illustration {
+    width: 100%;
+}
+
+
+/* CONTENT */
+
+
+
+.grow,
+.conversation,
+.your-user, .card {
+    margin: 30px 20px;
+    padding: 25px 20px;
+    box-shadow: 0px 0px 8px rgb(221, 213, 213);
+    border-radius: 20px;
+    overflow: scroll;
+}
+h2 {
+    margin-top: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+section p {
+    padding: 10px 20px;
+}
+
+.card {
+    position: absolute;
+    bottom: -300px;
+    left: 8%;
+    right: 8% ;
+    z-index: 1;
+    background-color: var(--neutral-pale-cyan);
+    border-radius: 15px;
+    padding-inline:  5px;
+    /* width: 100%; */
+
+}
+.card-container {
+    /* overflow: hidden; */
+    margin-inline: 2px;
+    padding: 10px 0px;
+
+}
+
+.card h2{
+    font-size: var(--fs);
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+}
+
+.card button {
+    font-size: 14px;
+    font-weight: var(--fw-sec-call-2-act);
+    padding: 10px 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50px;
+    outline: none;
+    border: 0;
+    background-color: var(--primary);
+    color: white;
+}
+
+
+img.illustration{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+
+footer {
+    background-color: hsl(193, 90%, 4%);
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-inline: 30px ;
+}
+
+.footer-logo {
+    color: white;
+}
+
+.location,
+.phone  {
+    display: flex;
+    padding-top: 20px;
+    font-size: var(--fs);
+}
+.location > img,
+.phone >img  {
+    margin-right: 30px;
+}
+
+img.icon {
+margin-right: 10px;
+ width: 20px;
+ height: 20px;
+ 
+}
+
+.more-info a{
+    padding-block: 20px;
+    font-size: 20px;
+}
+.more-info a:last-child{
+    padding-bottom: 60px;
+}
+
+.more-info a:hover{
+    text-decoration: underline;
+}
+
+.social {
+    text-align: center;
+}
+
+.social i {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.attribution {
+    font-size: 12px;
+    padding-top: 20px;
+}
